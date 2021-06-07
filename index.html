@@ -1,0 +1,38 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  </head>
+  <title> Family Book</title>
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/share_link_image_large/public/blog/csm-blog/familywell-being-blog-03_0.jpg?itok=R9s7KRY1">
+    <h3 id="one">1. Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "2. My Father (Amrik simgh)",
+   "3. My Mother (pritpal kaur)",
+   "4. My Sister (anureet kaur)",
+   "5. Me (Jasraj singh)",
+   "6. My parrots (mithu and sweetu)"
+   ];
+ var images=[
+   "https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/fathers_day_main_660_170620050716.jpg",
+   "https://image.shutterstock.com/image-vector/mom-letters-abstract-heart-ribbon-260nw-583550794.jpg",
+   "https://www.wishesmsg.com/wp-content/uploads/message-for-sister.jpg",
+   "https://i.nextmedia.com.au/News/ME_Bank.JPG",
+   "https://images.unsplash.com/photo-1579102380479-2b501bac7a90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+ ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==5){
+     i=0;
+   }}
+  </script>
+</body>
+</html>
